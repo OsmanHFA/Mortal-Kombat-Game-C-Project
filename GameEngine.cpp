@@ -46,7 +46,7 @@ void GameEngine::draw_health_bars(N5110 &lcd) {
         game_over(lcd);
     }
     lcd.printString("You", 0,1);
-    lcd.printString("Enemy", 55,1); // Kotal Khan is too long to be right-aligned so we have to write Enemy! :(
+    lcd.printString("Enemy", 55,1); 
     lcd.drawRect(0,0,F, 5, FILL_BLACK);
     lcd.drawRect(0,0,40, 5, FILL_TRANSPARENT);
     // ------------------------------------------------
