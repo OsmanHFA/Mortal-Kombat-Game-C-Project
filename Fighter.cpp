@@ -55,7 +55,7 @@ void Fighter::draw(N5110 &lcd) {    // drawing standing Fighter
 lcd.drawSprite(_x,_y,12,10,(int *)standsprite);
 }
 
-// ************************************************************************
+// ***********************************************************************
 
 void Fighter::move_left(N5110 &lcd){
     const int run_left[12][10] =   {
@@ -101,7 +101,7 @@ const int midrun_left[12][10] =   {
     
 }
 
-// ************************************************************************
+// ***********************************************************************
 
 void Fighter::move_right(N5110 &lcd) {
 
@@ -208,7 +208,7 @@ int Fighter::punch_right(N5110 &lcd) {
     { 1,1,0,0,0,1,1,0,0,0 },
     };
 lcd.drawSprite(_x,_y,12,10,(int *)punch);
-return 1; //confirm collision
+return 1; // confirm collision
 }
 
 // ************************************************************************
